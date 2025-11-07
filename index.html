@@ -1,125 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Goutham Sai Kumar — DevOps Portfolio</title>
-  <meta name="description" content="Goutham Sai Kumar — Cloud & DevOps Engineer (AWS, Azure, Kubernetes, Terraform). Portfolio showcasing projects, skills and contact." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Goutham Sai Kumar M — Cloud & DevOps Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6b2;--accent:#06b6d4;--glass: rgba(255,255,255,0.03)}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#071028 0%, #081226 100%);color:#e6eef6;margin:0;padding:32px}
-    .container{max-width:980px;margin:0 auto}
-    header{display:flex;align-items:center;gap:20px}
-    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,#0ea5a7,#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071026;font-size:28px}
-    h1{margin:0;font-size:24px}
-    p.lead{color:var(--muted);margin:6px 0 0}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:24px}
-    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
-    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-    .project{margin-bottom:14px}
-    .techs{font-size:13px;color:var(--muted);margin-top:6px}
-    .btn{display:inline-block;padding:9px 14px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#041026;text-decoration:none;font-weight:600}
-    .small{font-size:13px;color:var(--muted)}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px;font-size:20px}}
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    h1, h2 {
+      color: #38bdf8;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .info p {
+      margin: 6px 0;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #334155;
+      margin: 40px 0;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .tagline {
+      font-size: 16px;
+      color: #94a3b8;
+    }
+    .contact {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .contact a {
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    .skills strong {
+      color: #fbbf24;
+    }
+    .project {
+      margin-bottom: 25px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+    @media (max-width: 768px) {
+      .container { padding: 20px; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="avatar">GM</div>
-      <div>
-        <h1>Goutham Sai Kumar M — Cloud & DevOps Engineer</h1>
-        <p class="lead">AWS & Azure | Kubernetes | Terraform | CI/CD | Monitoring — 4 years experience</p>
-        <p class="small">Hyderabad, Telangana • <a href="mailto:gouthamsaikm@gmail.com">gouthamsaikm@gmail.com</a> • +91-8106609481</p>
+    <div class="header">
+      <h1>Goutham Sai Kumar M</h1>
+      <p class="tagline">Cloud & DevOps Engineer | AWS | Azure | Kubernetes | Terraform | CI/CD</p>
+      <div class="contact">
+        📧 <a href="mailto:gouthamsaikm@gmail.com">gouthamsaikm@gmail.com</a> |
+        📱 +91-8106609481 |
+        📍 Bangalore, India
       </div>
-    </header>
-
-    <div class="grid">
-      <main>
-        <section class="card">
-          <div class="section-title"><h3>About</h3><span class="small">Available for remote / hybrid roles</span></div>
-          <p class="small">I am a Cloud & DevOps engineer with ~4 years of experience building and operating cloud infrastructure and CI/CD pipelines for enterprise applications. I work primarily with AWS and Azure, manage Kubernetes clusters, and write IaC using Terraform and CloudFormation. I'm passionate about automation, observability and secure, scalable deployments.</p>
-        </section>
-
-        <section class="card" style="margin-top:16px">
-          <div class="section-title"><h3>Selected Projects</h3><a class="small" href="#projects">View all</a></div>
-
-          <div id="projects">
-            <div class="project">
-              <strong>Nebula Score Cloud</strong>
-              <div class="small">May 2023 – Oct 2025 • Client: Microsoft</div>
-              <p class="small">Managed CI/CD pipelines, containerization and Kubernetes environments across AWS & Google Cloud. Built Docker images, container registries, provisioned infra with Terraform, and set up monitoring and alerts.</p>
-              <div class="techs">Tech: AWS, Azure, AKE, Terraform, GitHub, Docker, Kubernetes, Prometheus, Grafana</div>
-            </div>
-
-            <div class="project">
-              <strong>Online Token Management (OTM)</strong>
-              <div class="small">Dec 2021 – Apr 2023 • Client: Charles Schwab</div>
-              <p class="small">Worked on deployment automation and production support for a security-critical application. Configured Jenkins builds, managed EC2 instances, Dockerized apps and supported Kubernetes clusters.</p>
-              <div class="techs">Tech: AWS, Jenkins, Git, Docker, Kubernetes, Terraform</div>
-            </div>
-
-          </div>
-        </section>
-
-        <section class="card" style="margin-top:16px">
-          <div class="section-title"><h3>Experience</h3><span class="small">Tech Mahindra — DevOps Engineer</span></div>
-          <p class="small">Dec 2021 – Present. Worked across onboarding, CI/CD, infra automation, monitoring and production support for enterprise clients. Focus on automation using Terraform, Ansible and Python; container orchestration with Kubernetes; and CI/CD with Jenkins/GitHub Actions.</p>
-        </section>
-
-        <section class="card" style="margin-top:16px">
-          <div class="section-title"><h3>Education</h3><span class="small">B.Tech — CMR (2021)</span></div>
-        </section>
-
-      </main>
-
-      <aside>
-        <div class="card">
-          <div class="section-title"><h3>Skills</h3><a class="small" href="#skills">proficiency</a></div>
-          <div id="skills" class="skills">
-            <div class="skill">AWS (Advanced)</div>
-            <div class="skill">Azure (Intermediate)</div>
-            <div class="skill">Kubernetes (Advanced)</div>
-            <div class="skill">Docker (Advanced)</div>
-            <div class="skill">Terraform (Advanced)</div>
-            <div class="skill">Jenkins / GitHub Actions (Advanced)</div>
-            <div class="skill">Python / Bash (Intermediate)</div>
-            <div class="skill">Prometheus · Grafana · Datadog (Intermediate)</div>
-          </div>
-
-          <div style="margin-top:14px">
-            <a class="btn" href="#contact">Contact Me</a>
-          </div>
-
-          <div style="margin-top:12px" class="small">
-            <div><strong>Links</strong></div>
-            <div style="margin-top:6px"><a class="small" href="https://github.com/your-github" target="_blank">GitHub</a> • <a class="small" href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></div>
-          </div>
-
-        </div>
-
-        <div class="card" style="margin-top:16px">
-          <div class="section-title"><h3>Downloads</h3></div>
-          <p class="small">Resume (PDF) — <a class="small" href="/Goutham_4yrs_DevOps_Engineer.pdf" download>Download</a></p>
-        </div>
-
-      </aside>
+      <div class="contact">
+        🌐 
+        <a href="https://github.com/gouthamsaikm" target="_blank">GitHub</a> • 
+        <a href="https://www.linkedin.com/in/mulagandla-goutham-sai-kumar-1a0878165/" target="_blank">LinkedIn</a>
+      </div>
     </div>
 
-    <section id="contact" class="card" style="margin-top:20px">
-      <div class="section-title"><h3>Contact</h3><span class="small">Let's work together</span></div>
-      <p class="small">Email: <a href="mailto:gouthamsaikm@gmail.com">gouthamsaikm@gmail.com</a></p>
-      <p class="small">Or copy this link to share: <code>https://your-username.github.io/your-repo/</code></p>
+    <hr>
+
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate <strong>Cloud & DevOps Engineer</strong> with 4 years of hands-on experience building, automating, and optimizing mission-critical deployments in AWS and Azure using CI/CD pipelines, Kubernetes, and Terraform. 
+        I focus on creating reliable, secure, and scalable systems that accelerate software delivery and operational excellence.
+      </p>
     </section>
 
-    <footer class="small">Built and maintained by Goutham Sai Kumar • Last updated: Nov 2025</footer>
+    <hr>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <ul>
+        <li>4 years of IT experience specializing in <strong>Cloud & DevOps Engineering</strong>.</li>
+        <li>Proficient in AWS (EC2, S3, VPC, IAM, Lambda, CloudFormation) and Azure Cloud services.</li>
+        <li>Containerization & orchestration with <strong>Docker</strong> and <strong>Kubernetes</strong> (Helm, RBAC, Ingress, Policies).</li>
+        <li>CI/CD automation using <strong>Jenkins</strong>, <strong>GitHub Actions</strong>, and <strong>GitLab CI</strong>.</li>
+        <li>Infrastructure as Code using <strong>Terraform</strong> and <strong>Ansible</strong>.</li>
+        <li>Monitoring & logging with Prometheus, Grafana, ELK, and Datadog.</li>
+        <li>Strong experience in Python & Shell scripting for automation.</li>
+        <li>Cross-platform expertise on Linux, RHEL, Ubuntu, and Windows servers.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <strong>Cloud:</strong> AWS, Azure<br>
+        <strong>Containerization:</strong> Docker, Kubernetes, Helm<br>
+        <strong>Infra as Code:</strong> Terraform, CloudFormation<br>
+        <strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI<br>
+        <strong>Scripting:</strong> Shell, Python<br>
+        <strong>Monitoring:</strong> Prometheus, Grafana, Datadog, ELK<br>
+        <strong>Version Control:</strong> Git, GitHub<br>
+        <strong>Tools:</strong> Jira, Confluence, ServiceNow, MS Teams
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+      <p><strong>DevOps Engineer — Tech Mahindra</strong> (Dec 2021 – Present)</p>
+      <ul>
+        <li>Automated deployments and environment provisioning on AWS & Azure using Terraform and Ansible.</li>
+        <li>Containerized microservices using Docker, deployed via Kubernetes with Helm charts.</li>
+        <li>Built CI/CD pipelines with Jenkins and GitHub Actions to improve delivery speed by 35%.</li>
+        <li>Implemented centralized monitoring and alerting using Prometheus, Grafana, and Datadog.</li>
+        <li>Collaborated with multiple cross-functional teams for seamless production releases and incident management.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <strong>Nebula Score Cloud (Client: Microsoft)</strong><br>
+        <em>May 2023 – Oct 2025 | AWS, Azure, Terraform, Kubernetes</em>
+        <ul>
+          <li>Built automated CI/CD pipelines for multi-cloud infrastructure deployments.</li>
+          <li>Managed Kubernetes clusters across AWS and Azure; implemented auto-scaling and fault tolerance.</li>
+          <li>Configured observability stacks (Prometheus, Grafana) for proactive monitoring.</li>
+          <li>Reduced infrastructure provisioning time by 40% via Terraform automation.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <strong>Online Token Management (Client: Charles Schwab)</strong><br>
+        <em>Dec 2021 – Apr 2023 | AWS, Docker, Jenkins, Kubernetes</em>
+        <ul>
+          <li>Implemented CI/CD pipelines using Jenkins for seamless deployments to AWS.</li>
+          <li>Containerized legacy applications with Docker and orchestrated deployments via Kubernetes clusters.</li>
+          <li>Streamlined release process using Git branching and automated versioning scripts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Technology (B.Tech)</strong> — CMR College of Engineering & Technology, 2021</p>
+    </section>
+
+    <hr>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:gouthamsaikm@gmail.com">gouthamsaikm@gmail.com</a></p>
+      <p>🌐 <a href="https://github.com/gouthamsaikm" target="_blank">GitHub</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/mulagandla-goutham-sai-kumar-1a0878165/" target="_blank">LinkedIn</a></p>
+      <p>📍 Bangalore, India</p>
+    </section>
+
+    <div class="footer">
+      Built with ❤️ by <strong>Goutham Sai Kumar M</strong> • Last updated: Nov 2025
+    </div>
   </div>
 </body>
 </html>
